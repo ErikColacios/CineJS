@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(44, 44, 44);
+    color: white
+}
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu button{
+    width: 300px;
+}
+
+
+form input {
+    padding: 5px;
+    margin: 10px;
+}
+
+#btnEliminar{
+    width: 50%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    transition: 0.2s;
+}
+
+#btnEliminar:hover{
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+#pelis{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.añadir{
+    display: none;
+}
+
+.añadir label{
+    font-size: 28px;
+    padding: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mostrarAñadir{
+    margin: 15px;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.mostrarAñadir:hover{
+    background-color: black;
+    color: white;
+}
+
+.ocultarAñadir{
+    color: orangered;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+}
+
+#btnEnviar {
+    background-color: orangered;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+#btnEnviar:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+/* Pelis */
+
+.recuadroPeli{
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    width: 320px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.recuadroPeli img{
+    width: 100%;
+}
+
+
+/* Navbar */
+.intro {
+    padding: 10%;
+}
+.intro h1{
+    font-size: 4vw;
+}
+
+.intro button {
+    margin-top: 25px;
+    background-color: #ea1538;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;    
+    transition: 0.3s;
+}
+.intro button a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.intro button:hover {
+    transform: scale(1.1);
+}
+
+
+
+.fondoInicio{
+    color: white;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("imgs/portatil_movil.jpg");
+    background-size: cover;
+}
+
+.logo{
+    color: white;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    background-color: black;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    display: block;
+}
+   
+nav ul li a:hover{
+    color: #ea1538;
+}
+
+nav button {
+    color: white;
+    background-color: #ea1538;
+    padding: 10px 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    transition: .3s;
+}
+nav button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* --------- Hamburger -------------------*/
+
+.toggle-button {
+    position: absolute;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px){
+    .toggle-button{
+        display: flex;
+    } 
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav li{
+        text-align: center;
+    }
+
+    nav li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+}
+
+
+/* DATOS Pelicula */
+.heroPeli{
+    min-height: 100vh;
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+.infoPeli{
+    margin: 5%;
+    background-color: rgb(73, 73, 73);
+    border-radius: 10px;
+}
